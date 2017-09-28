@@ -13,6 +13,7 @@ class Test extends Controller
     public function index()
     {
         Redis::set('ss','ss');
+        var_dump(Redis::get('ss'));
 
 //        for($i = 0; $i <10; $i++) {
 //            dispatch(new TestJob());
